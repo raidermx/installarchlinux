@@ -1,1 +1,1 @@
-script de instalação do archlinux para computadores intel.
+scripts de instalação de sistemas operacionais gnu/linux
