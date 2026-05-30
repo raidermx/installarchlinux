@@ -70,8 +70,7 @@ systemctl enable NetworkManager
 # 8 Snapper e integração com Btrfs
 pacman -S --noconfirm snapper grub-btrfs
 snapper -c root create-config /
-systemctl enable fstrim.timer
-systemctl enable tlp
+
 
 # 9 Otimizações de sistema
 # reduzir swappiness
