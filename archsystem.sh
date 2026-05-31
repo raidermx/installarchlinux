@@ -81,4 +81,8 @@ sed -i 's/#Storage=auto/Storage=volatile/' /etc/systemd/journald.conf
 sed -i 's/#ParallelDownloads = 5/ParallelDownloads = 5/' /etc/pacman.conf
 EOF
 
+echo ">> Desmontando partições e finalizando"
+swapoff -a || true
+umount -R /mnt
+
 echo "Instalação concluída. Remova o USB e reinicie."
