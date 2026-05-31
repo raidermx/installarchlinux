@@ -5,9 +5,9 @@ set -euo pipefail
 
 DISK="/dev/sda"              # ATENÇÃO: disco será APAGADO
 HOSTNAME="archlinux"
-USERNAME="user"
-USER_PASSWORD="live"     # troque depois
-ROOT_PASSWORD="live"      # troque depois
+USERNAME="carlos"
+USER_PASSWORD="senha123"     # troque depois
+ROOT_PASSWORD="root123"      # troque depois
 LOCALE="pt_BR.UTF-8"
 LOCALE_FALLBACK="pt_BR.UTF-8"
 KEYMAP="br-abnt2"
