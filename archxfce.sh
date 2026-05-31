@@ -200,9 +200,21 @@ pacman -S --noconfirm \
   qalculate-gtk qbittorrent uget yt-dlp \
   neovim hardinfo tmux tmate okular kate geany \
   rawtherapee darktable digikam \
-  qcad librecad kicad shotcut
+  qcad librecad kicad shotcut \
+  p7zip unrar unzip zip file-roller ark xarchiver \
+  aria2 transmission-qt
+
+echo ">> Navegadores"
+pacman -S --noconfirm --needed base-devel git
+cd /tmp
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si --noconfirm
+paru -S --noconfirm google-chrome brave-bin
 
 echo ">> Otimizações: pacman, energia, TRIM, firewall"
+echo "vm.swappiness=10" > /etc/sysctl.d/99-swappiness.conf
+sed -i 's/#Storage=auto/Storage=volatile/' /etc/systemd/journald.conf
 sed -i 's/^#Color/Color/' /etc/pacman.conf
 sed -i 's/^#ParallelDownloads = 5/ParallelDownloads = 5/' /etc/pacman.conf
 
