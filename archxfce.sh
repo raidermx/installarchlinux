@@ -180,10 +180,12 @@ pacman -S --noconfirm \
   pipewire pipewire-pulse pipewire-alsa pipewire-jack wireplumber pavucontrol \
   network-manager-applet \
   bluez bluez-utils blueman \
-  cups system-config-printer
+  cups system-config-printer \
+  networkmanager iwd dialog firefox chromium
 
 systemctl enable bluetooth
 systemctl enable cups
+systemctl enable NetworkManager
 
 echo ">> Ativando PipeWire (user services serão ativados no login)"
 # Em muitos casos não precisa habilitar manualmente, mas deixamos assim:
@@ -196,7 +198,9 @@ pacman -S --noconfirm \
   gimp inkscape krita blender \
   kdenlive obs-studio handbrake vlc ffmpeg \
   qalculate-gtk qbittorrent uget yt-dlp \
-  neovim hardinfo tmux tmate 
+  neovim hardinfo tmux tmate okular kate geany \
+  rawtherapee darktable digikam \
+  qcad librecad kicad shotcut
 
 echo ">> Otimizações: pacman, energia, TRIM, firewall"
 sed -i 's/^#Color/Color/' /etc/pacman.conf
