@@ -194,7 +194,9 @@ pacman -S --noconfirm \
   libreoffice-fresh libreoffice-fresh-pt-br \
   evince \
   gimp inkscape krita blender \
-  kdenlive obs-studio handbrake vlc ffmpeg
+  kdenlive obs-studio handbrake vlc ffmpeg \
+  webcamoid qalculate-gtk qbittorrent uget yt-dlp \
+  vim neovim hardinfo tmux tmate 
 
 echo ">> Otimizações: pacman, energia, TRIM, firewall"
 sed -i 's/^#Color/Color/' /etc/pacman.conf
