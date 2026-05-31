@@ -207,10 +207,10 @@ pacman -S --noconfirm \
 echo ">> Navegadores"
 pacman -S --noconfirm --needed base-devel git
 cd /tmp
-git clone https://aur.archlinux.org/paru.git
-cd paru
+git clone https://aur.archlinux.org/yay.git
+cd yay 
 makepkg -si --noconfirm
-paru -S --noconfirm google-chrome brave-bin
+yay -S --noconfirm google-chrome brave-bin
 
 echo ">> Otimizações: pacman, energia, TRIM, firewall"
 echo "vm.swappiness=10" > /etc/sysctl.d/99-swappiness.conf
