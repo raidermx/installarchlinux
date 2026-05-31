@@ -204,14 +204,6 @@ pacman -S --noconfirm \
   p7zip unrar unzip zip file-roller ark xarchiver \
   aria2 transmission-qt qgis octave
 
-echo ">> Navegadores"
-pacman -S --noconfirm --needed base-devel git
-cd /tmp
-git clone https://aur.archlinux.org/yay.git
-cd yay 
-makepkg -si --noconfirm
-yay -S --noconfirm google-chrome brave-bin
-
 echo ">> Otimizações: pacman, energia, TRIM, firewall"
 echo "vm.swappiness=10" > /etc/sysctl.d/99-swappiness.conf
 sed -i 's/#Storage=auto/Storage=volatile/' /etc/systemd/journald.conf
