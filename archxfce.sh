@@ -9,7 +9,7 @@ USERNAME="carlos"
 USER_PASSWORD="senha123"     # troque depois
 ROOT_PASSWORD="root123"      # troque depois
 LOCALE="pt_BR.UTF-8"
-LOCALE_FALLBACK="en_US.UTF-8"
+LOCALE_FALLBACK="pt_BR.UTF-8"
 KEYMAP="br-abnt2"
 TIMEZONE="America/Recife"
 
