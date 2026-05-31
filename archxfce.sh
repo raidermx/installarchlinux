@@ -195,8 +195,8 @@ pacman -S --noconfirm \
   evince \
   gimp inkscape krita blender \
   kdenlive obs-studio handbrake vlc ffmpeg \
-  webcamoid qalculate-gtk qbittorrent uget yt-dlp \
-  vim neovim hardinfo tmux tmate 
+  qalculate-gtk qbittorrent uget yt-dlp \
+  neovim hardinfo tmux tmate 
 
 echo ">> Otimizações: pacman, energia, TRIM, firewall"
 sed -i 's/^#Color/Color/' /etc/pacman.conf
