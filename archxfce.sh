@@ -4,10 +4,10 @@ set -euo pipefail
 ### ===== CONFIGURAÇÕES BÁSICAS =====
 
 DISK="/dev/sda"              # ATENÇÃO: disco será APAGADO
-HOSTNAME="arch-dell"
-USERNAME="carlos"
-USER_PASSWORD="senha123"     # troque depois
-ROOT_PASSWORD="root123"      # troque depois
+HOSTNAME="archlinux"
+USERNAME="user"
+USER_PASSWORD="live"     # troque depois
+ROOT_PASSWORD="live"      # troque depois
 LOCALE="pt_BR.UTF-8"
 LOCALE_FALLBACK="pt_BR.UTF-8"
 KEYMAP="br-abnt2"
@@ -243,3 +243,4 @@ umount -R /mnt
 
 echo "Instalação concluída. Remova o pendrive e dê reboot:"
 echo "reboot"
+reboot
