@@ -191,10 +191,9 @@ systemctl --global enable pipewire pipewire-pulse wireplumber || true
 
 echo ">> Kit Office, gráfica, imagem e vídeo"
 pacman -S --noconfirm \
-  libreoffice-fresh libreoffice-fresh-pt-br hunspell-pt_br \
+  libreoffice-fresh libreoffice-fresh-pt-br \
   evince \
   gimp inkscape krita blender \
-  pinta imagemagick \
   kdenlive obs-studio handbrake vlc ffmpeg
 
 echo ">> Otimizações: pacman, energia, TRIM, firewall"
