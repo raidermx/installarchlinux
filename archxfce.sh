@@ -202,7 +202,7 @@ pacman -S --noconfirm \
   rawtherapee darktable digikam \
   qcad librecad kicad shotcut \
   p7zip unrar unzip zip file-roller ark xarchiver \
-  aria2 transmission-qt
+  aria2 transmission-qt qgis octave
 
 echo ">> Navegadores"
 pacman -S --noconfirm --needed base-devel git
